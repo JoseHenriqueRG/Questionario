@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questionario.Backend", "Questionario.Backend\Questionario.Backend.csproj", "{90C9530D-DF04-41D0-B0D0-A2D5B9746456}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questionario.Frontend", "Questionario.Frontend\Questionario.Frontend.csproj", "{CEB1547D-D16A-4FAC-ACD3-09A62E6D5E74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90C9530D-DF04-41D0-B0D0-A2D5B9746456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90C9530D-DF04-41D0-B0D0-A2D5B9746456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90C9530D-DF04-41D0-B0D0-A2D5B9746456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90C9530D-DF04-41D0-B0D0-A2D5B9746456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEB1547D-D16A-4FAC-ACD3-09A62E6D5E74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEB1547D-D16A-4FAC-ACD3-09A62E6D5E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEB1547D-D16A-4FAC-ACD3-09A62E6D5E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEB1547D-D16A-4FAC-ACD3-09A62E6D5E74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FCA601A-496B-4F17-93E4-3170BF1B4245}
+	EndGlobalSection
+EndGlobal

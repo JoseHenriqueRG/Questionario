@@ -1,0 +1,6 @@
+@Questionario.Backend_HostAddress = http://localhost:5287
+
+GET {{Questionario.Backend_HostAddress}}/Respostas/
+Accept: application/json
+
+###

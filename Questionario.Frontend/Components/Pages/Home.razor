@@ -1,0 +1,57 @@
+﻿@using Questionario.Frontend.Components.Layout
+@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Bem-vindo ao aplicativo Questionário!</h1>
+
+<div class="row g-3">
+	<div class="col-7">
+		<label for="faixaIdade" class="form-label"><strong>Faixa de Idade</strong></label>
+		<select id="faixaIdade" class="form-select" @bind="_resposta.FaixaIdade.Id" required>
+			<option >Selecione...</option>
+			@foreach (var faixaIdade in _faixasIdade)
+			{
+				<option value="@faixaIdade.Id">@faixaIdade.Descricao</option>
+			}
+		</select>
+	</div>
+	<div class="col-7">
+		<label for="convenio" class="form-label"><strong>Convênio</strong></label>
+		<select id="convenio" class="form-select" @bind="_resposta.Convenio.Id" required>
+			<option >Selecione...</option>
+			@foreach (var convenio in _convenios)
+			{
+				<option value="@convenio.Id">@convenio.Nome</option>
+			}
+		</select>
+	</div>
+	<div class="col-7">
+		<label for="faixaSalarial" class="form-label"><strong>Faixa Salarial</strong></label>
+		<select id="faixaSalarial" class="form-select" @bind="_resposta.FaixaSalarial.Id" required>
+			<option >Selecione...</option>
+			@foreach (var faixaSalarial in _faixasSalarial)
+			{
+				<option value="@faixaSalarial.Id">@faixaSalarial.Descricao</option>
+			}
+		</select>
+	</div>
+	<div class="col-7">
+		<label for="motivoEmprestimo" class="form-label"><strong>Motivo Empréstimo</strong></label>
+		<select id="motivoEmprestimo" class="form-select" @bind="_resposta.MotivoEmprestimo.Id" required>
+			<option >Selecione...</option>
+			@foreach (var motivoEmprestimo in _motivosEmprestimo)
+			{
+				<option value="@motivoEmprestimo.Id">@motivoEmprestimo.Descricao</option>
+			}
+		</select>
+	</div>
+	<div class="col-12">
+		<button type="button" class="btn btn-primary" @onclick="SalvarAsync">
+			Enviar
+		</button>
+	</div>
+</div>
+
+<Alert Mensagem="@_mensagem" Classe="@_classe" />
+<Loading ShowLoading="@_loading" />
